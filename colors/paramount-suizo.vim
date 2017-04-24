@@ -92,10 +92,10 @@ if &background != s:background
    execute "set background=" . s:background
 endif
 
-call s:h("Cursor",        {"bg": s:purple, "fg": s:norm })
+call s:h("Cursor",        {"bg": s:dark_green, "fg": s:norm })
 call s:h("Comment",       {"fg": s:bg_subtle, "gui": "bold"})
 
-call s:h("Constant",      {"fg": s:purple})
+call s:h("Constant",      {"fg": s:dark_green})
 hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
@@ -113,7 +113,7 @@ hi! link Label            Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
-call s:h("Operator",      {"fg": s:norm, "cterm": "bold", "gui": "bold"})
+call s:h("Operator",      {"fg": s:white, "cterm": "bold", "gui": "bold"})
 
 call s:h("PreProc",     {"fg": s:norm_subtle})
 hi! link Include          PreProc
@@ -136,7 +136,7 @@ hi! link Debug            Special
 call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",        {"fg": s:bg})
 call s:h("Error",         {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
-call s:h("Todo",          {"fg": s:purple, "gui": "underline", "cterm": "underline"})
+call s:h("Todo",          {"fg": s:red, "gui": "underline", "cterm": "underline"})
 call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:medium_gray})
 call s:h("Directory",     {"fg": s:dark_blue})
@@ -146,7 +146,7 @@ call s:h("Search",        {"bg": s:bg_subtle})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:bg_subtle})
-call s:h("CursorLineNr",  {"fg": s:purple, "bg": s:bg_very_subtle})
+call s:h("CursorLineNr",  {"fg": s:orange, "bg": s:bg_very_subtle})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
