@@ -1,13 +1,12 @@
 # Paramount-suizo
 ## Based in paramount colorscheme:
+
+
 [original]: https://github.com/powickstrom/vim-colors-paramount
 
 A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
 ## Screenshots
-
-
-*Monaco* font on light and dark backgrounds:
 
 ![](screenshots/paramount_tunning.png)
 
@@ -35,11 +34,5 @@ Based on the [pencil][] and [off][] colorschemes.
 [pencil]: https://github.com/reedes/vim-colors-pencil
 [off]: https://github.com/reedes/vim-colors-off
 
-## Contributions
-
-If you find any problems with this color scheme please post an Issue here on
-GitHub. Thanks!
-
-## License
 
 Original license from pencil: [MIT](LICENSE)
