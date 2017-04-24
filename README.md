@@ -1,8 +1,7 @@
 # Paramount-suizo
 ## Based in paramount colorscheme:
 
-
-[original]: https://github.com/powickstrom/vim-colors-paramount
+[original]: https://github.com/owickstrom/vim-colors-paramount
 
 A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
