@@ -1,6 +1,7 @@
-" Name:       paramount.vim
+" Name:       paramount-suizo.vim
 " Version:    0.1.0
-" Maintainer: github.com/owickstrom
+" Based in paramount colorscheme: github.com/owickstrom
+" Differences: I add gray color for types
 " License:    The MIT License (MIT)
 "
 " A minimal colorscheme for Vim that only puts emphasis on the paramount.
@@ -17,7 +18,7 @@ if exists('syntax on')
     syntax reset
 endif
 
-let g:colors_name='paramount'
+let g:colors_name='paramount-suizo'
 
 let s:black           = { "gui": "#262626", "cterm": "235" }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
@@ -92,7 +93,7 @@ if &background != s:background
 endif
 
 call s:h("Cursor",        {"bg": s:purple, "fg": s:norm })
-call s:h("Comment",       {"fg": s:bg_subtle, "gui": "italic"})
+call s:h("Comment",       {"fg": s:bg_subtle, "gui": "bold"})
 
 call s:h("Constant",      {"fg": s:purple})
 hi! link Character        Constant
@@ -120,7 +121,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:norm})
+call s:h("Type",          {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
