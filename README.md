@@ -1,24 +1,21 @@
-# Paramount
+# Paramount-suizo
+## Based in paramount colorscheme:
+[original]: https://github.com/powickstrom/vim-colors-paramount
 
 A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
 ## Screenshots
 
-*Latin Modern Mono* font on light and dark backgrounds:
-
-![](screenshots/latin-modern-light.png)
-![](screenshots/latin-modern-dark.png)
 
 *Monaco* font on light and dark backgrounds:
 
-![](screenshots/monaco-light.png)
-![](screenshots/monaco-dark.png)
+![](screenshots/paramount_tunning.png)
 
 ## Installation
 
 Simply copy the color scheme file to your `~/.vim/colors`
 directory or use a plugin manager like [Plug][] or [Vundle][] and add
-`"owickstrom/vim-colors-paramount"` as a plugin.
+`"elsuizo/vim-colors-paramount-suizo"` as a plugin.
 
 [vundle]: https://github.com/gmarik/Vundle.vim
 [plug]: https://github.com/junegunn/vim-plug
@@ -26,7 +23,7 @@ directory or use a plugin manager like [Plug][] or [Vundle][] and add
 ## Usage
 
 ```
-:colorscheme paramount
+:colorscheme paramount-suizo
 ```
 
 Supports both `background=light` and `background=dark`.
