@@ -93,7 +93,7 @@ if &background != s:background
 endif
 
 call s:h("Cursor",        {"bg": s:dark_green, "fg": s:norm })
-call s:h("Comment",       {"fg": s:bg_subtle, "gui": "bold"})
+call s:h("Comment",       {"fg": s:bg_subtle, "gui": "italic"})
 
 call s:h("Constant",      {"fg": s:dark_green})
 hi! link Character        Constant
@@ -126,7 +126,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:norm_subtle, "gui": "italic"})
+call s:h("Special",       {"fg": s:norm_subtle, "gui": "bold"})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
@@ -136,13 +136,14 @@ hi! link Debug            Special
 call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",        {"fg": s:bg})
 call s:h("Error",         {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
-call s:h("Todo",          {"fg": s:red, "gui": "underline", "cterm": "underline"})
+call s:h("Todo",          {"fg": s:red, "gui": "bold", "cterm": "bold"})
+call s:h("NOTE",          {"fg": s:orange, "gui": "bold", "cterm": "bold"})
 call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:medium_gray})
 call s:h("Directory",     {"fg": s:dark_blue})
 call s:h("ErrorMsg",      {"fg": s:pink})
 call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
-call s:h("Search",        {"bg": s:bg_subtle})
+call s:h("Search",        {"bg": s:actual_white, "fg": s:pink})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:bg_subtle})
@@ -205,3 +206,4 @@ hi link GitGutterAdd                LineNr
 hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
+
