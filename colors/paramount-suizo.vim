@@ -20,7 +20,7 @@ endif
 
 let g:colors_name='paramount-suizo'
 
-let s:black           = { "gui": "#000000", "cterm": "235" }
+let s:black           = { "gui": "#262626", "cterm": "235" }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
 let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
@@ -53,13 +53,13 @@ if &background == "dark"
   let s:bg              = s:black
   let s:bg_subtle       = s:lighter_black
   let s:bg_very_subtle  = s:subtle_black
-  let s:norm            = s:lighter_gray
+  let s:norm            = s:lightest_gray
   let s:norm_subtle     = s:medium_gray
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
   let s:red             = s:light_red
-  let s:visual          = s:light_purple
+  let s:visual          = s:orange
 else
   let s:bg              = s:actual_white
   let s:bg_subtle       = s:light_gray
