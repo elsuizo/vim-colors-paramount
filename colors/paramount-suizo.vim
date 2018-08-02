@@ -34,6 +34,7 @@ let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
+let s:light_orange    = { "gui": "#D75F5F", "cterm": "187" }
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "32"   }
 let s:blue            = { "gui": "#20BBFC", "cterm": "12"  }
@@ -113,7 +114,7 @@ hi! link Label            Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
-call s:h("Operator",      {"fg": s:lighter_black, "cterm": "bold", "gui": "bold"})
+call s:h("Operator",      {"fg": s:lightest_gray, "cterm": "bold", "gui": "bold"})
 
 call s:h("PreProc",     {"fg": s:norm_subtle})
 hi! link Include          PreProc
@@ -121,7 +122,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
+call s:h("Type",          {"fg": s:light_orange, "cterm": "bold", "gui": "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
@@ -141,9 +142,9 @@ call s:h("NOTE",          {"fg": s:orange, "gui": "bold", "cterm": "bold"})
 call s:h("SpecialKey",    {"fg": s:light_green})
 call s:h("NonText",       {"fg": s:medium_gray})
 call s:h("Directory",     {"fg": s:dark_blue})
-call s:h("ErrorMsg",      {"fg": s:pink})
+call s:h("ErrorMsg",      {"fg": s:red})
 call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
-call s:h("Search",        {"bg": s:actual_white, "fg": s:pink})
+call s:h("Search",        {"bg": s:actual_white, "fg": s:orange})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
 hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:bg_subtle})
@@ -168,12 +169,12 @@ call s:h("SignColumn",    {"fg": s:light_green})
 if has("gui_running")
   call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
   call s:h("SpellCap",    {"gui": "underline", "sp": s:light_green})
-  call s:h("SpellRare",   {"gui": "underline", "sp": s:pink})
+  call s:h("SpellRare",   {"gui": "underline", "sp": s:orange})
   call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_green})
 else
   call s:h("SpellBad",    {"cterm": "underline", "fg": s:red})
   call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_green})
-  call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
+  call s:h("SpellRare",   {"cterm": "underline", "fg": s:orange})
   call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
 endif
 
