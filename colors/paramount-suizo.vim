@@ -122,7 +122,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:light_orange, "cterm": "bold", "gui": "bold"})
+call s:h("Type",          {"fg": s:subtle_black, "cterm": "bold", "gui": "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
