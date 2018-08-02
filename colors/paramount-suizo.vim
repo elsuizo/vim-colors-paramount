@@ -34,6 +34,7 @@ let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
 let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
 let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
+let s:light_orange    = { "gui": "#D75F5F", "cterm": "187" }
 let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "32"   }
 let s:blue            = { "gui": "#20BBFC", "cterm": "12"  }
@@ -121,7 +122,7 @@ hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
-call s:h("Type",          {"fg": s:white, "cterm": "bold", "gui": "bold"})
+call s:h("Type",          {"fg": s:light_orange, "cterm": "bold", "gui": "bold"})
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
