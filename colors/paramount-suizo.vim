@@ -105,7 +105,6 @@ hi! link String           Constant
 
 "call s:h("Identifier",    {"fg": s:dark_blue})
 hi! link Identifier       Normal
-hi! link Function         Identifier
 
 call s:h("Statement",     {"fg": s:norm_subtle})
 hi! link Conditonal       Statement
@@ -133,6 +132,7 @@ hi! link Tag              Special
 hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
+hi! link Function         Special
 
 call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
 call s:h("Ignore",        {"fg": s:bg})
