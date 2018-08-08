@@ -8,7 +8,7 @@ A minimal colorscheme for Vim that only puts emphasis on the paramount.
 
 ## Screenshots
 
-![](screenshots/paramount_tunning.png)
+![](screenshots/vim-paramount-suizo2.png)
 
 ## Installation
 
