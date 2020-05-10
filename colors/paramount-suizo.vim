@@ -126,7 +126,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:orange, "gui": "bold"})
+call s:h("Special",       {"fg": s:dark_red, "gui": "bold"})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
